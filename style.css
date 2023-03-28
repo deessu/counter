@@ -17,14 +17,14 @@ body {
 }
 
 .container {
-    height: 115px;
-    min-width: 370px;
-    border-radius: 20px;
+    height: 95px;
+    min-width: 300px;
+    border-radius: 23px;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: -15px 15px 0 0 #696969;
+    box-shadow: -15px 10px 0 0 #696969;
       
 }
 
@@ -34,10 +34,26 @@ body {
     font-size: 50px;
     font-weight: 600;
     color: #ED6742;
+    cursor: pointer;
+    user-select: none;
 }
 .minus {
+    transition: 0.3s;
 }
-.num {
+.minus:hover {
+    font-size: 55px;
 }
 .plus {
+    transition: 0.3s;
+}
+.plus:hover {
+    font-size: 55px;
+}
+
+.container span.num {
+    font-size: 50px;
+    border-right: 1px solid #696969;
+    border-left: 1px solid #696969;
+    pointer-events: none;
+    user-select: auto;
 }
